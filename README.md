@@ -8,9 +8,13 @@ Miles Justice, Joel Tecson, Brendan Posehn, Matan Guttmann
 * add photos etc to website
 
 ## Meet the Team
+![](https://photos.google.com/u/1/photo/AF1QipNf4YOWLSJJ9-Aw4CSNgXK6bjZhWO-OVNbfzBQ)
 Miles Justice -- description etc
+
 Joel Tecson -- fsfsd
+
 Brendan Posehn -- fdsfa
+
 Matan Guttmann -- sdfasf
 
 ## Team 5 presents - Robo Fett!
