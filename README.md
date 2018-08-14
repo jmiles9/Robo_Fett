@@ -1,6 +1,10 @@
 # Robo Fett
 ENPH 253 Summer 2018 - Team 5 Website
 
+here's a photo
+
+![moon](https://en.wikipedia.org/wiki/Moon#/media/File:FullMoon2010.jpg)
+
 Miles Justice, Joel Tecson, Brendan Posehn, Matan Guttmann
 
 ### To-Do (Delete this when finished)
