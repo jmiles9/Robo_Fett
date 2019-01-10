@@ -64,6 +64,116 @@
 			</section>
 			<!-- End banner Area -->	
 
+			<!-- Start Sensor area-->
+			<section class="services-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content  col-lg-7">
+							<div class="title text-center">
+								<h1 class="mb-10">Sensors</h1>
+							</div>
+						</div>
+					</div>
+					<div class="row align-items-center justify-content-between">
+						<div class="col-lg-5 col-md-6 home-about-left">						
+							<h6>Infra-Red Detection Circuit</h6>
+							<p>To get past the gate, Robo Fett had to wait until the IR emitter changed from 1kHz 
+								to 10kHz. We implemented an IR detection circuit using a series of op-amps that 
+								acted to filter the signal and then detect peaks in order to determine the 
+								frequency of the signal.
+							</p>
+							
+						</div>
+
+						<div class="col-lg-6 col-md-6 home-about-right">
+							<img class="img-fluid" height="350" width="350" src="img/IR_schematic.png" alt="">
+						</div>
+					</div>
+
+					<div class="row align-items-center justify-content-between">
+						<div class="col-lg-5 col-md-6 home-about-left">						
+							<h6>Tape Following and Edge Detection</h6>
+							<p>
+								To follow the tape, we used QRDs (integrated IR emitter/detectors) at the front of 
+								Robo Fett. These sensors return analog values between 0 and 1024 depending on the 
+								reflectivity of the surface below. We started with two, but ended up deciding to use 
+								four since it allowed us to tape follow more smoothly, which led to more accuracy 
+								and speed. 
+							</p>
+							<p>
+								To follow the bridge up to Chewbacca, we used QRDs on the side of Robo Fett to 
+								detect the edge of the bridge. To save on analog ports, we also converted these 
+								outputs to digital using a comparator circuit. 
+							</p>
+							
+						</div>
+					</div>
+					<div class="row align-items-center justify-content-between">
+							<div class="col-lg-5 col-md-6 home-about-left">						
+								<h6>Ewok Detection</h6>
+								<p>
+									Detecting the Ewoks proved to be one of the most difficult tasks. Since they
+									were made of a soft material, the ultrasonic sensor we tried at first did not 
+									consistently work. We then moved on to using QRDs, but they were not strong enough
+									to differentiate between an Ewok nearby and a wall far away. We ended up designing 
+									our own IR emitter/detector circuit, using 4 IR emitting LEDs and an IR detector. 
+									This worked so well that other teams consulted us when designing their sensors. 
+								</p>
+								
+							</div>
+							<div class="col-lg-6 col-md-6 home-about-right">
+									<img class="img-fluid" height="350" width="350" src="img/bessica.jpg" alt="">
+								</div>
+						</div>
+				</div>	
+			</section>
+		<!-- end sensor area-->
+
+		<section class="services-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content  col-lg-7">
+							<div class="title text-center">
+								<h1 class="mb-10">Motors and Servos</h1>
+							</div>
+						</div>
+					</div>
+					<div class="row align-items-center justify-content-between">
+						<div class="col-lg-5 col-md-6 home-about-left">						
+							<h6>DC Motors</h6>
+							<p>We used four DC Motors in total: two in our drivetrain, one to drive the power 
+								screw to lift the robot, and one smaller motor to propel Robo Fett up the zipline.
+								We powered the motors using a single 12-volt LiPo battery.
+							</p>
+							<p>To control the motors, we ran the output from our microcontroller through an H-bridge 
+								powered by the 12 volt battery. This allowed us to increase our current to the motors
+								past what our microcontroller outputted, while allowing us to run the motors both in 
+								forward and reverse.
+							</p>
+							<p>On our drivetrain motors, we constructed encoder circuits using QRDs so we could 
+								keep track of the distance we were traveling. At first, we tried to debounce (minimise
+								the error) in our encoder readings through software, by ignoring ticks that came in under
+								a certain time interval. This was not quite sufficient and we ended up supplementing this 
+								with a debouncing RC circuit. 
+							</p>
+						</div>
+
+						<div class="col-lg-6 col-md-6 home-about-right">
+							<img class="img-fluid" height="350" width="350" src="img/hbridge.jpg" alt="">
+						</div>
+					</div>
+					<div class="row align-items-center justify-content-between">
+							<div class="col-lg-5 col-md-6 home-about-left">						
+								<h6>Servos</h6>
+								<p>We used servos to dump the basket/drop the bridge, raise and lower the claws, and 
+									operate the claw tongs. We powered the servos using the same 12-volt LiPo as the 
+									DC Motors, but we regulated the voltage to 6 volts to ensure consistent performance.
+								</p>
+							</div>
+						</div>
+				</div>	
+			</section>
+		<!-- end motor area-->
 			
             <!-- start footer Area -->
             <footer class="footer-area section-gap">
